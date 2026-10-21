@@ -4,12 +4,14 @@ GitHub Pages에서 화면을 제공하고 Google Drive `family` 전용 폴더에
 
 ## 현재 상태
 
-- **이전 준비 중이며 아직 사용 가능한 새 금고가 아닙니다.** Google Apps Script 생성과 Code.gs 저장은 완료했습니다. 계정 실행 권한 승인·실제 배포 및 브라우저 검증이 남아 있습니다.
-- 구글 프로젝트 ID: `1dUAQq6x1Nr54L3QizhHKSKradngkLnqusIrwdGDCNGPpd1reQ0Z9oSMS`. 프로젝트 이름은 `family`이며 Google Drive의 `family` 전용 폴더 안으로 이동하고 부모 폴더를 확인했습니다.
-- Google 계정 로그인은 확인했습니다. 이후 브라우저 연결이 반복 시간 초과되어 실행·배포를 완료하지 못했습니다. 중복 프로젝트를 생성하지 말고 이 프로젝트에서 재개해야 합니다. Code.gs는 저장했고 매니페스트 표시 설정은 켰으며, 매니페스트 내용 반영과 provisionFamily 실행은 확인되지 않았습니다.
-- `config.js`의 `apiUrl`은 실제 배포가 검증될 때까지 비워 둡니다. 연결 전에는 저장 완료를 표시하지 않습니다.
-- 기존 사이트와 기존 데이터는 삭제하거나 변경하지 않았습니다. 기존 정보 1건의 이전은 별도로 검증해야 합니다.
-- 서버와 브라우저 암호화 동작의 모의 환경 테스트 13개를 통과했습니다. 이 결과는 실제 Google 배포/CORS/휴대폰 동작 검증을 대신하지 않습니다.
+- Google Apps Script가 실제로 배포되었습니다. GET 서비스 확인에서 `ready:true`, 비로그인 POST 상태 확인에서 `setupNeeded:true`, 인증 없는 데이터 요청에서 `401` 차단을 확인했습니다.
+- GitHub Pages: https://holaharu.github.io/family/
+- `config.js`에 소유자가 배포한 `/exec` 주소를 연결했습니다. 초기 빈 설정 캐시를 피하도록 HTML의 config 참조에 버전을 붙였습니다.
+- Google Drive의 `family` 안에서 `family-vault.json`, `family-recovery-key.json`, `photos`, `backups` 생성을 확인했습니다. 데이터 파일과 복구 키는 비공개입니다.
+- 구글 프로젝트 ID: `1dUAQq6x1Nr54L3QizhHKSKradngkLnqusIrwdGDCNGPpd1reQ0Z9oSMS`. 해당 프로젝트도 family 전용 폴더 안에 있습니다.
+- 관리자 최초 비밀번호 설정은 아직 완료되지 않았습니다. `provisionFamily` 실행 로그의 최초 관리자 설정 링크에서 소유자가 직접 설정해야 합니다. 초기 설정 토큰은 GitHub에 저장하지 않습니다.
+- 서버와 브라우저 암호화 동작의 모의 환경 테스트 13개를 통과했습니다. 관리자 설정 후 실제 저장·사진 재열람·복원 검증이 남아 있습니다.
+- 기존 사이트와 데이터는 삭제하거나 변경하지 않았습니다. 기존 정보 1건은 아직 새 금고로 이전하지 않았습니다. 원래 사이트의 로그인 권한으로 복호화하여 옮겨야 하며 암호화된 원본을 그대로 새 금고에 넣어서는 안 됩니다.
 
 ## 구성
 
