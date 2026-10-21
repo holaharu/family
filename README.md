@@ -10,7 +10,7 @@ GitHub Pages에서 화면을 제공하고 Google Drive `family` 전용 폴더에
 - Google Drive의 `family` 안에서 `family-vault.json`, `family-recovery-key.json`, `photos`, `backups` 생성을 확인했습니다. 데이터 파일과 복구 키는 비공개입니다.
 - 구글 프로젝트 ID: `1dUAQq6x1Nr54L3QizhHKSKradngkLnqusIrwdGDCNGPpd1reQ0Z9oSMS`. 해당 프로젝트도 family 전용 폴더 안에 있습니다.
 - 관리자 최초 비밀번호 설정은 아직 완료되지 않았습니다. `provisionFamily` 실행 로그의 최초 관리자 설정 링크에서 소유자가 직접 설정해야 합니다. 초기 설정 토큰은 GitHub에 저장하지 않습니다.
-- 서버와 브라우저 암호화 동작의 모의 환경 테스트 13개를 통과했습니다. 관리자 설정 후 실제 저장·사진 재열람·복원 검증이 남아 있습니다.
+- 서버와 브라우저 암호화 동작의 모의 환경 테스트 13개를 통과했습니다. 실제 GitHub Pages 브라우저에서 Google POST 통신(CORS)과 가족 선택 화면 표시도 확인했습니다. 관리자 설정 후 실제 저장·사진 재열람·복원 검증이 남아 있습니다.
 - 기존 사이트와 데이터는 삭제하거나 변경하지 않았습니다. 기존 정보 1건은 아직 새 금고로 이전하지 않았습니다. 원래 사이트의 로그인 권한으로 복호화하여 옮겨야 하며 암호화된 원본을 그대로 새 금고에 넣어서는 안 됩니다.
 
 ## 구성
