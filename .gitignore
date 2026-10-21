@@ -1,0 +1,7 @@
+.env*
+.clasprc.json
+.clasp.json
+family-vault.json
+family-recovery-key.json
+*private*
+node_modules/
